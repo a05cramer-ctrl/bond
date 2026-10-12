@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>BailPad</title>
-<meta name="description" content="$BAIL creator fees post bail. Public wallet, every bond receipted.">
-<meta property="og:title" content="BailPad">
-<meta property="og:description" content="$BAIL creator fees post bail. Public wallet, every bond receipted.">
+<title>Pay A Bond</title>
+<meta name="description" content="$BOND creator fees post bail. Public wallet, every bond receipted.">
+<meta property="og:title" content="Pay A Bond">
+<meta property="og:description" content="$BOND creator fees post bail. Public wallet, every bond receipted.">
 <meta property="og:image" content="og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="pfp.png">
@@ -160,9 +160,9 @@ footer p{max-width:70ch}
 
 <nav>
   <div class="wrap">
-    <a class="brand" href="#top"><img src="pfp.png" alt=""><b>BailPad</b></a>
-    <div class="navlinks"><a href="#how">How it works</a><a href="#receipts">Receipts</a><a href="#rules">Rules</a><a href="#fees">Fees</a><a href="#token">$BAIL</a></div>
-    <a class="btn primary" id="navbuy" href="#token">Buy $BAIL</a>
+    <a class="brand" href="#top"><img src="pfp.png" alt=""><b>Pay A Bond</b></a>
+    <div class="navlinks"><a href="#how">How it works</a><a href="#receipts">Receipts</a><a href="#rules">Rules</a><a href="#fees">Fees</a><a href="#token">$BOND</a></div>
+    <a class="btn primary" id="navbuy" href="#token">Buy $BOND</a>
   </div>
 </nav>
 
@@ -170,17 +170,17 @@ footer p{max-width:70ch}
   <div class="wrap herogrid">
     <div>
       <span class="eyebrow">Bail fund · Solana</span>
-      <h1>Trade $BAIL.<br><em>The fees post<br>bail.</em></h1>
-      <p class="lead">Every $BAIL creator fee lands in one public wallet. That wallet pays bonds for people stuck in jail over a few hundred dollars, and every payment gets a receipt here.</p>
-      <div class="cta"><a class="btn primary" id="herobuy" href="#token">Buy $BAIL</a><a class="btn line" href="#receipts">See receipts</a></div>
+      <h1>Trade $BOND.<br><em>The fees post<br>bail.</em></h1>
+      <p class="lead">Every $BOND creator fee lands in one public wallet. That wallet pays bonds for people stuck in jail over a few hundred dollars, and every payment gets a receipt here.</p>
+      <div class="cta"><a class="btn primary" id="herobuy" href="#token">Buy $BOND</a><a class="btn line" href="#receipts">See receipts</a></div>
       <div class="facts">
-        <div><b>100%</b><span>of creator fees to the bail wallet</span></div>
+        <div><b>100%</b><span>of creator fees to the bond wallet</span></div>
         <div><b>Public</b><span>wallet anyone can check</span></div>
         <div><b>Receipt</b><span>posted for every bond paid</span></div>
       </div>
     </div>
-    <article class="record" aria-label="Bail wallet">
-      <div class="rh"><span class="rid">BAIL WALLET</span><span class="pill" id="wState"><span class="dot"></span>Opens at launch</span></div>
+    <article class="record" aria-label="Bond wallet">
+      <div class="rh"><span class="rid">BOND WALLET · DEV FEES LAND HERE</span><span class="pill" id="wState"><span class="dot"></span>Opens at launch</span></div>
       <div class="stats">
         <div class="wide"><span>In the wallet now</span><b id="wBal">—</b><small id="wSol"></small></div>
         <div><span>Bonds paid</span><b id="wCount">—</b></div>
@@ -195,8 +195,8 @@ footer p{max-width:70ch}
   <div class="wrap">
     <div class="sechead"><span class="eyebrow">How it works</span><h2>From trade to release</h2></div>
     <ol class="steps">
-      <li><span class="n">STEP 01</span><h3>People trade $BAIL</h3><p>Every buy and sell on pump.fun pays a creator fee.</p></li>
-      <li><span class="n">STEP 02</span><h3>Fees hit the bail wallet</h3><p>100% of creator fees go to one public Solana wallet.</p></li>
+      <li><span class="n">STEP 01</span><h3>People trade $BOND</h3><p>Every buy and sell on pump.fun pays a creator fee.</p></li>
+      <li><span class="n">STEP 02</span><h3>Fees hit the bond wallet</h3><p>100% of creator fees go to one public Solana wallet.</p></li>
       <li><span class="n">STEP 03</span><h3>A bond gets paid</h3><p>The wallet pays the bond through the clerk of court or a licensed bondsman.</p></li>
       <li><span class="n">STEP 04</span><h3>The receipt goes up</h3><p>Date, amount, county and the transaction, posted below. No names.</p></li>
     </ol>
@@ -205,7 +205,7 @@ footer p{max-width:70ch}
 
 <section class="sec" id="receipts">
   <div class="wrap">
-    <div class="sechead"><span class="eyebrow">Receipts</span><h2>Bonds paid</h2><p class="lead">Every payment out of the bail wallet. Names are never posted.</p></div>
+    <div class="sechead"><span class="eyebrow">Receipts</span><h2>Bonds paid</h2><p class="lead">Every payment out of the bond wallet. Names are never posted.</p></div>
     <div class="ledger">
       <div class="row head"><span>Date</span><span class="c2">County</span><span class="c3">Amount</span><span>Transaction</span></div>
       <div id="rows"></div>
@@ -222,7 +222,6 @@ footer p{max-width:70ch}
       <div class="tcard"><h3>Paid to the court</h3><p>Payments go to the clerk of court or a licensed bondsman, never as cash to a person.</p></div>
       <div class="tcard"><h3>Public wallet</h3><p>Anyone can check the balance and every transaction on Solana.</p></div>
       <div class="tcard"><h3>Receipt for every bond</h3><p>Each payment is posted with its date, amount, county and transaction.</p></div>
-      <div class="tcard"><h3>No names, no photos</h3><p>Nobody's arrest is ever posted. Help shouldn't follow someone around.</p></div>
       <div class="tcard"><h3>Small bonds first</h3><p>The wallet goes furthest on the low bonds that keep people inside for weeks.</p></div>
     </div>
   </div>
@@ -233,16 +232,16 @@ footer p{max-width:70ch}
     <div class="sechead"><span class="eyebrow">Fees</span><h2>Where the fees go</h2></div>
     <div class="feegrid">
       <div class="panel">
-        <div class="split">Bail wallet · 100% of creator fees</div>
+        <div class="split">Bond wallet · 100% of creator fees</div>
         <div class="legend">
-          <div><span>Creator fees</span><span>100% to the bail wallet</span></div>
+          <div><span>Creator fees</span><span>100% to the bond wallet</span></div>
           <div><span>Wallet pays</span><span>Clerk of court or licensed bondsman</span></div>
           <div><span>Every payment</span><span>Receipt posted on this page</span></div>
         </div>
       </div>
       <div class="panel calc">
         <span class="pill">Estimate</span>
-        <label for="vol">Daily $BAIL volume <output id="vv">$50,000</output></label>
+        <label for="vol">Daily $BOND volume <output id="vv">$50,000</output></label>
         <input type="range" id="vol" min="5000" max="1000000" step="5000" value="50000">
         <label for="fee">Creator fee rate <output id="fv">0.30%</output></label>
         <input type="range" id="fee" min="0.05" max="1" step="0.05" value="0.3">
@@ -260,7 +259,7 @@ footer p{max-width:70ch}
     <div class="faq">
       <details><summary>Who gets helped?</summary><p>People held on low bonds. Payments go straight to the court or a licensed bondsman.</p></details>
       <details><summary>Why no names?</summary><p>An arrest is not a conviction, and posting it on a coin site would follow people long after they're out. Receipts show the date, amount, county and transaction only.</p></details>
-      <details><summary>Can I check the money?</summary><p>Yes. The bail wallet is public on Solana, and the balance on this page is read from it live.</p></details>
+      <details><summary>Can I check the money?</summary><p>Yes. The bond wallet is public on Solana, and the balance on this page is read from it live.</p></details>
       <details><summary>What happens to bail money after the case?</summary><p>When a court returns a bond at the end of a case, it goes back into the wallet and pays the next one.</p></details>
     </div>
   </div>
@@ -268,18 +267,18 @@ footer p{max-width:70ch}
 
 <section class="sec" id="token">
   <div class="wrap tok">
-    <img src="pfp.png" alt="$BAIL">
+    <img src="pfp.png" alt="$BOND">
     <div>
       <span class="eyebrow">The token</span>
-      <h2 style="margin-top:14px">$BAIL</h2>
-      <p class="lead" style="margin-top:14px">Every trade pays a creator fee, and every creator fee goes to the bail wallet.</p>
+      <h2 style="margin-top:14px">$BOND</h2>
+      <p class="lead" style="margin-top:14px">Every trade pays a creator fee, and every creator fee goes to the bond wallet.</p>
       <div class="ca"><code id="ca">Contract address posts at launch</code><button id="copy" type="button">Copy</button></div>
       <div class="cta" style="margin-top:0"><a class="btn primary" id="buy" target="_blank" rel="noopener">Buy on pump.fun</a><a class="btn line" id="chart" target="_blank" rel="noopener">Chart</a><a class="btn line" id="x" target="_blank" rel="noopener">X</a></div>
     </div>
   </div>
 </section>
 
-<footer><div class="wrap"><span>BailPad · $BAIL</span><p>Not legal or financial advice. Memecoins are speculative and can go to zero. The bail wallet pays bonds only, through a court or licensed bondsman.</p></div></footer>
+<footer><div class="wrap"><span>Pay A Bond · $BOND</span><p>Not legal or financial advice. Memecoins are speculative and can go to zero. The bond wallet pays bonds only, through a court or licensed bondsman.</p></div></footer>
 
 <script>
 (()=>{
@@ -305,8 +304,10 @@ if(C.WALLET){
   if(!R.length){$('#wCount').textContent='0';$('#wTotal').textContent='$0'}
   const load=async()=>{
     try{
+      const rpcs=[C.RPC,'https://solana-rpc.publicnode.com','https://api.mainnet-beta.solana.com'].filter(Boolean);
+      const bal=async()=>{for(const u of rpcs){try{const r=await fetch(u,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({jsonrpc:'2.0',id:1,method:'getBalance',params:[a]})});const j=await r.json();if(j&&j.result)return j}catch(e){}}throw new Error('rpc')};
       const [b,p]=await Promise.all([
-        fetch(C.RPC||'https://api.mainnet-beta.solana.com',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({jsonrpc:'2.0',id:1,method:'getBalance',params:[a]})}).then(r=>r.json()),
+        bal(),
         fetch('https://lite-api.jup.ag/price/v3?ids=So11111111111111111111111111111111111111112').then(r=>r.json()).catch(()=>({}))
       ]);
       const sol=(b.result?.value||0)/1e9;const px=+(p.So11111111111111111111111111111111111111112?.usdPrice||0);
@@ -314,7 +315,7 @@ if(C.WALLET){
       $('#wSol').textContent=sol.toFixed(3)+' SOL';
     }catch(e){}
   };
-  load();setInterval(load,30000);
+  load();setInterval(load,15000);
 }
 
 /* calc */
@@ -323,7 +324,7 @@ function calc(){
   $('#vv').textContent=usd(v);$('#fv').textContent=f.toFixed(2)+'%';$('#bv').textContent=usd(b);
   const day=v*f/100;const n=day/b;
   $('#out').textContent=(n>=1?n.toFixed(1):n.toFixed(2))+' bonds / day';
-  $('#outs').textContent=`${usd(day)} a day into the bail wallet at these numbers`;
+  $('#outs').textContent=`${usd(day)} a day into the bond wallet at these numbers`;
 }
 ['#vol','#fee','#bond'].forEach(s=>$(s).addEventListener('input',calc));calc();
 
